@@ -35,7 +35,6 @@ public class Lambda01 {
             return s.trim();
         });
         System.out.println(s1);
-
     }
 
 
