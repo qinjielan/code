@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Arrays;
 
-public class SelectionSort {
+public class SelectSort {
     public static void main(String[] args) {
         int[] arr = new int[]{101, 34, 119, 1};
         int[] arr1 = new int[80000];
@@ -23,10 +23,11 @@ public class SelectionSort {
     }
 
     public static void selectionSort(int[] arr) {
-
+        int minIndex = 0;
+        int min = 0;
         for (int i = 0; i < arr.length - 1; i++) {
-            int minIndex = i;
-            int min = arr[i];
+            minIndex = i;
+            min = arr[i];
             for (int j = i + 1; j < arr.length; j++) {
                 if (min > arr[j]) { //说明假定的最小值，并不是最小的
                     min = arr[j]; //重置最小值（min）
