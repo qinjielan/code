@@ -15,7 +15,6 @@ public class SelectSort {
 
         LocalDateTime now1 = LocalDateTime.now();
         selectionSort(arr1);
-
         //  System.out.println(Arrays.toString(arr));
         LocalDateTime now2 = LocalDateTime.now();
         long between = ChronoUnit.MILLIS.between(now1, now2);
