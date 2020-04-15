@@ -25,7 +25,6 @@ public class InsertSort {
         int current = 0;
         int preIndex = 0;
         for (int i = 1; i < arr.length; i++) {
-
             preIndex = i-1; //待插入数的前一个数的索引
             current = arr[i]; //定义当前待插入的数
             // 拿当前的数与之前已排序序列逐一往前比较，
